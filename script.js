@@ -17,9 +17,9 @@ console.log (summ);
     const quantityEnter = prompt ("Количество товара");
     const quantity = +quantityEnter;
 
-    if (isNaN(quantity)) {
+    if (Number.isNaN(quantity)) {
         alert ("Вы ввели некорректные данные");
-    }
+    } 
 
     const categoryEnter = prompt ("Категория товара");
     const category = categoryEnter;
@@ -27,14 +27,15 @@ console.log (summ);
     const priceEnter = prompt ("Цена товара");
     const price = +priceEnter;
 
-    if (isNaN(price)) {
+    if (Number.isNaN(price)) {
         alert ("Вы ввели некорректные данные");
-    }
+    } 
 
     const summ = price * quantity;
     if (summ === +summ) {
-        console.log(`На складе ${quantity} ед. товара "${product}" на сумму ${summ} деревянных`);
-    }
+        console.log(`На складе ${quantity} ед. товара "${product}" на сумму ${summ} деревянных`);  
+    } 
 }
+
 
 
