@@ -50,21 +50,3 @@ console.log(result3);
 В каждом массиве из двух элементов, первым является количество товаров в чеке, а вторым — общая сумма.
 Необходимо посчитать среднюю стоимость одного товара в магазине.*/
 
-const array1 = ['a', 'b', 'c'];
-
-array1.forEach(element => console.log(element));
-
-// expected output: "a"
-// expected output: "b"
-// expected output: "c"
-
-
-
-const getAverage = (numbers) => {
-    const sum = numbers.reduce((acc, number) => acc + number, 0);
-    const length = numbers.length;
-    return sum / length;
-};
-
-const numbers = [1, 2, 3, 4];
-console.log(getAverage(numbers)); // => 2.5
