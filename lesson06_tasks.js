@@ -45,9 +45,26 @@ function addPrefix(names, prefix) {
 const result3 = addPrefix(names, 'Mr ');
 console.log(result3);
 
-const allCashbox2 = [ [12, 4500], [7, 3210], [4, 650], [3, 1250], [9, 7830], [1, 990], [6, 13900], [1, 370] ];
+/* Не обязательное задание
+Напишите функцию getAveragePriceGoods. для получения средней цены товара. Дан многомерный  массив:
+В каждом массиве из двух элементов, первым является количество товаров в чеке, а вторым — общая сумма.
+Необходимо посчитать среднюю стоимость одного товара в магазине.*/
+
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
 
 
-const getAveragePriceGoods2 = allCashbox2.map(item => item[1] / item[0]);
 
-console.log(getAveragePriceGoods2.sum / getAveragePriceGoods2.length);
+const getAverage = (numbers) => {
+    const sum = numbers.reduce((acc, number) => acc + number, 0);
+    const length = numbers.length;
+    return sum / length;
+};
+
+const numbers = [1, 2, 3, 4];
+console.log(getAverage(numbers)); // => 2.5
