@@ -48,13 +48,12 @@ const cart = {
     },
 };
 
-cart.add('cappucino', 100, 2 );
+cart.add('cappucino', 100, 2);
 cart.add('sugar', 10, 2);
 cart.add('cake', 300, 2);
 
 cart.print();
 console.log(cart);
-
 
 
 
